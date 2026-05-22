@@ -122,4 +122,3 @@ try {
     http_response_code(500);
     echo json_encode(['status' => 'error', 'message' => 'Message saved, but email could not be sent. Mailer Error: ' . $mail->ErrorInfo]);
 }
-//hi alemu
