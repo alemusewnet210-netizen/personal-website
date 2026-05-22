@@ -1,0 +1,26 @@
+Alemu Sewnet
+Bachelor of Science in Computer Science
+
+Contact Information:
+Email: alemusewnet210@gmail.com
+Phone: +251932261668
+LinkedIn: https://www.linkedin.com/in/alemu-sewnet
+
+Summary:
+A motivated 3rd-year computer science student with experience in web development, machine learning, and computer graphics. Comfortable building full-stack applications using HTML, CSS, JavaScript, PHP, React, and Python.
+
+Skills:
+- Web development: HTML, CSS, JavaScript, React
+- Backend: PHP, Node.js
+- Data analysis and machine learning
+- OpenGL and graphics programming
+- Version control and GitHub collaboration
+
+Experience:
+- Built several web applications for university and personal projects.
+- Developed predictive machine learning models for academic use.
+- Created a dormitory management system with React and JavaScript.
+
+Education:
+Bachelor of Science in Computer Science
+3rd Year Student

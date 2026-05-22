@@ -1,0 +1,680 @@
+/* Portfolio Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #666;
+  background-color: #f4f4f4;
+}
+
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1.5rem 1rem;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  color: khaki;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.about-actions {
+  margin-top: 1.25rem;
+}
+
+.download-cv-btn,
+.submit-btn,
+.project-links a {
+  display: inline-block;
+  margin: 0.35rem 0.35rem 0 0;
+  padding: 0.75rem 1.15rem;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.download-cv-btn:hover,
+.submit-btn:hover,
+.project-links a:hover {
+  background: #0056cc;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 700px;
+  margin-top: 1.5rem;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-response {
+  color: #1a7f1a;
+  font-weight: 600;
+}
+
+.submit-btn {
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, #edf7ff 0%, #d8f1ff 100%);
+  text-align: center;
+}
+
+.hero h2 {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+.contact-info {
+  margin-top: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+#skills {
+  background: linear-gradient(135deg, #edf7ff 0%, #d8f1ff 100%);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-category {
+  flex: 1 1 200px;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.skill-category h3 {
+  margin-bottom: 1rem;
+  color: #3498db;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category li {
+  margin: 0.5rem 0;
+  padding: 0.25rem;
+  background: #e9ecef;
+  border-radius: 3px;
+  color: #3498db;
+}
+#education {
+  background: linear-gradient(135deg, #edf7ff 0%, #d8f1ff 100%);
+  text-align: center;
+}
+
+.education-item {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#projects {
+  background: linear-gradient(135deg, #edf7ff 0%, #d8f1ff 100%);
+}
+
+.project-category {
+  margin-bottom: 2rem;
+}
+
+.project-category h3 {
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+.project-category p {
+  margin-bottom: 1rem;
+  max-width: 900px;
+  color: #666;
+}
+
+.upload-section {
+  background: linear-gradient(135deg, #edf7ff 0%, #d8f1ff 100%);
+  border: 1px solid #b3dbff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.upload-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.upload-section p {
+  color: #666;
+  margin-bottom: 1.25rem;
+}
+
+.upload-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 700px;
+}
+
+.upload-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.upload-form input[type="text"],
+.upload-form select,
+.upload-form input[type="file"] {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.upload-form button {
+  width: fit-content;
+  padding: 0.85rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.upload-form button:hover:not(:disabled) {
+  background: #0056cc;
+}
+
+.upload-form button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.upload-message {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.selected-files {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.uploaded-list {
+  margin-top: 1.5rem;
+}
+
+.uploaded-list ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.uploaded-list li {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  line-height: 1.5;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.uploaded-list li strong {
+  color: #555;
+}
+
+.upload-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.file-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.file-item {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.file-name {
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.file-content {
+  background: #f4f4f4;
+  padding: 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 260px;
+  overflow: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project {
+  flex: 1 1 300px;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.project.upcoming {
+  border-color: #ff8c42;
+  background: #fff4e8;
+}
+
+.project-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #1a9dff;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+  color: #3498db;
+}
+
+.project p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: #3498db;
+}
+
+.project strong {
+  color: #333;
+}
+
+/* GitHub Configuration Styles */
+.github-config {
+  background: white;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.github-config h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.github-config > p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.config-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+.config-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.config-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.config-form .save-btn {
+  width: fit-content;
+  padding: 0.75rem 1.25rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.config-form .save-btn:hover {
+  background: #218838;
+}
+
+/* File Item Styles */
+.file-item {
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.file-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.expand-btn {
+  flex: 1;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  padding: 0;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.expand-btn:hover {
+  color: #007bff;
+}
+
+.file-size {
+  color: #999;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.file-content {
+  background: #f4f4f4;
+  padding: 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 500px;
+  overflow: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* Push to GitHub Button */
+.push-github-btn {
+  padding: 0.65rem 1.25rem;
+  background: #6f42c1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.push-github-btn:hover:not(:disabled) {
+  background: #5a32a3;
+}
+
+.push-github-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#contact {
+  text-align: center;
+  background: linear-gradient(135deg, #edf7ff 0%, #d8f1ff 100%);
+}
+
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.social-media a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.like-section {
+  margin: 0.5rem 0;
+}
+
+.like-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.like-btn:hover {
+  background: #0056cc;
+}
+
+.developed-by {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.contact-title {
+  color: #4a76a8;
+  font-size: 2rem;
+}
+
+#contact p,
+.contact-form label {
+  color: #3498db;
+}
+
+.education-title {
+  color: #6c757d;
+  font-size: 2rem;
+}
+
+.skills-title {
+  color: #6c757d;
+  font-size: 2rem;
+}
+
+.projects-title {
+  color: #4a76a8;
+  font-size: 2rem;
+}
+
+.education-title {
+  color: #3498db;
+}
+
+.degree-title {
+  color: #3498db;
+}
+
+.about-title {
+  color: #3498db;
+  font-size: 2rem;
+}
+
+.skills-title {
+  color: #3498db;
+}
+
+.about-text {
+  color: #3498db;
+}
+
+.about-contact {
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
